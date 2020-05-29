@@ -1,5 +1,22 @@
 .App {
+  justify-content: end;
   text-align: center;
+  color: #000000;
+}
+
+body {
+  background: url("./imgs/tape.jpg") no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  filter: opacity(100%);
+}
+
+.ima {
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
 }
 
 .App-logo {

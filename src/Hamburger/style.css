@@ -1,0 +1,74 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  background-color: transparent;
+}
+
+.nav {
+  width: 30vw;
+  border-width: 0 1px 1px 0;
+  border-style: solid;
+  border-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  right: -35vw;
+  -webkit-transition: right 0.3s ease-in;
+  -o-transition: right 0.3s ease-in;
+  transition: right 0.3s ease-in;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    width: 50vw;
+    right: -55vw;
+  }
+}
+
+.close {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 15px 0 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nav.show {
+  right: 0;
+}
+
+.menu-button {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  z-index: 99;
+  font-size: 36px;
+  cursor: pointer;
+  padding: 10px 8px;
+  padding-left: 95%;
+}
+
+.menu-items {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #555;
+  display: flex;
+  justify-content: end;
+  padding: 16px 10px;
+  font-size: 24px;
+  border-bottom: 1px solid #555;
+}
